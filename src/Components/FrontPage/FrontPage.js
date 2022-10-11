@@ -13,11 +13,13 @@ const FrontPage = ({ topic }) => {
         <Card.Img className="img-fluid p-3" src={logo} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
-          <Card.Text>Total Quiz: {total}</Card.Text>
+          <Card.Text>
+            <h6>Total Quiz: {total}</h6>
+          </Card.Text>
 
           <Link to={`topic/${id}`}>
             <Button className="w-100" variant="primary">
-              Start Quiz
+              <h5 className="btn-txt py-2"> Start {name} Quiz</h5>
             </Button>
           </Link>
         </Card.Body>
