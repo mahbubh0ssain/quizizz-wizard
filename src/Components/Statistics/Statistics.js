@@ -1,9 +1,29 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 const Statistics = () => {
+  const stat = useLoaderData();
   return (
     <div>
-      <h2>This is stat</h2>
+      <h2 className="text-center my-3">Quiz Statistics</h2>
+      <ResponsiveContainer>
+        <LineChart width={1000} height={300} data={stat.data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 };
