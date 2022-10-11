@@ -14,9 +14,12 @@ const FrontPage = ({ topic }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>Total Quiz: {total}</Card.Text>
-          <Button className="w-100" variant="primary">
-            <Link to={`topic/${id}`}>Start Quiz</Link>
-          </Button>
+
+          <Link to={`topic/${id}`}>
+            <Button className="w-100" variant="primary">
+              Start Quiz
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>
