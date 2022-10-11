@@ -4,6 +4,7 @@ import FrontPage from "../FrontPage/FrontPage";
 
 const Home = () => {
   const topics = useLoaderData();
+
   return (
     <div className="container">
       <div className="d-flex justify-content-around align-items-center p-3">
@@ -17,9 +18,12 @@ const Home = () => {
           maxime itaque sequi ipsum rem quasi nisi sit quidem.
         </p>
       </div>
-      {topics.map((topic) => (
-        <FrontPage key={topic.id} topic={topic}></FrontPage>
-      ))}
+
+      <div className="row row-cols-lg-4 row-cols-md-2   m-2">
+        {topics.data.map((topic) => (
+          <FrontPage key={topic.id} topic={topic}></FrontPage>
+        ))}
+      </div>
     </div>
   );
 };

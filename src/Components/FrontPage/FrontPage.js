@@ -3,17 +3,15 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 const FrontPage = ({ topic }) => {
   const { name, logo, total } = topic;
+
   return (
     <div>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" className="img-fluid p-3" src={logo} />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>TOtal Quiz: {total}</Card.Text>
+          <Button variant="primary">Start Quiz</Button>
         </Card.Body>
       </Card>
     </div>
