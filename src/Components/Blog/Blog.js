@@ -30,7 +30,12 @@ const Blog = () => {
               various components but it gives users better experience. Regular
               navigation makes an annoying situation by reloading the whole page
               but React Router does not reload th page it just allows changing
-              the browser URL, and keeps the UI in sync with the URL. 
+              the browser URL, and keeps the UI in sync with the URL. Some key
+              steps using React Router <br /> (1). install react router with npm
+              i react-router-dom <br /> (2). create router with
+              createBrowserRouter() <br />
+              (3). use RouterProvider with props router <br />
+              (4). use Link tag instead of anchor
             </div>
           </div>
         </div>
