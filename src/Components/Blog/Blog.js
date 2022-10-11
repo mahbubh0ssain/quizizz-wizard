@@ -59,14 +59,18 @@ const Blog = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              React Context API is an effective way of passing data through
+              components in ease (without props drilling). In it's version 16.3
+              it has added some new features. Props drilling is an useful but
+              annoying way of data passing. Context is also touted as an easier,
+              lighter approach to state management using Redux. Steps of using
+              Context API: <br />
+              (1). create a context named createContext(), like this: "const
+              UserContext = createContext()" <br />
+              (2). Make a JSX like UserContext.Provider and give a value either
+              dynamic or static <br />
+              (3). Then use the context in the desired component by
+              useContext(contextName)
             </div>
           </div>
         </div>
@@ -90,7 +94,14 @@ const Blog = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>React Router is a library.</strong>
+              useRef is an additional hook in React. Basically in React we do
+              nothing like manipulating DOM using document.getElementById or
+              something else and it is not a good practice for the developer.
+              Because in React (React) itself manipulate DOM. But sometimes DOM
+              is to manipulated by the developer manually in a React project. In
+              this time we use useRef hook to manipulate DOM manually. In useRef
+              (ref) means reference. Now the question is which reference? The
+              answer is DOM reference.
             </div>
           </div>
         </div>
