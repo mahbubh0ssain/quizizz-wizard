@@ -13,9 +13,9 @@ import {
 const Statistics = () => {
   const stat = useLoaderData();
   return (
-    <div>
+    <div className="w-75 mx-auto">
       <h2 className="text-center my-3">Quiz Statistics</h2>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer aspect={3}>
         <LineChart data={stat.data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
