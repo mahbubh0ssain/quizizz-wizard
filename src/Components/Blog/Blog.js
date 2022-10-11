@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="container">
-      <h2>This is blog.</h2>
+      <h2 className="text-center my-3">Know something new</h2>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -15,7 +15,7 @@ const Blog = () => {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Accordion Item #1
+              <h4>What is the purpose of react router?</h4>
             </button>
           </h2>
           <div
@@ -25,14 +25,12 @@ const Blog = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>React Router is a library.</strong> It is a standard
+              library for routing in react. Without it we can navigate through
+              various components but it gives users better experience. Regular
+              navigation makes an annoying situation by reloading the whole page
+              but React Router does not reload th page it just allows changing
+              the browser URL, and keeps the UI in sync with the URL. 
             </div>
           </div>
         </div>
@@ -46,7 +44,7 @@ const Blog = () => {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Accordion Item #2
+              <h4>How does Context API work?</h4>
             </button>
           </h2>
           <div
@@ -77,7 +75,7 @@ const Blog = () => {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Accordion Item #3
+              <h4>Usage of useRef hook.</h4>
             </button>
           </h2>
           <div
@@ -87,14 +85,7 @@ const Blog = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>React Router is a library.</strong>
             </div>
           </div>
         </div>
