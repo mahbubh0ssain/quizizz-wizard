@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Option.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Option = ({ option, rightWrongFunc, answer }) => {
-  const notify = () => toast(answer);
-
+  const notify = (answer) => toast(answer);
+  const [disable, setDisable] = useState(false);
   return (
     <div>
-      <div
+      <button
         onClick={() => {
-          notify();
           rightWrongFunc(option);
+          notify(answer);
+          setDisable(true);
         }}
-        className="opt border rounded-3 m-1 p-2"
+        disabled={disable}
+        className="opt text-start border rounded-3 m-1 p-2"
       >
         <ToastContainer />
-
         {option}
-      </div>
+      </button>
     </div>
   );
 };

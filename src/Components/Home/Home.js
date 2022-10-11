@@ -23,7 +23,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+      <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 ">
         {topics.data.map((topic) => (
           <FrontPage key={topic.id} topic={topic}></FrontPage>
         ))}

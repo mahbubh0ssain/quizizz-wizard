@@ -17,11 +17,11 @@ const Topic = ({
   const [answer, setAnswer] = useState();
   const rightWrongFunc = (option) => {
     if (option === correctAnswer) {
-      setRightCount(rightCount + 1);
       setAnswer("YAY! Your answer is right.");
+      setRightCount(rightCount + 1);
     } else {
-      setWrongCount(wrongCount + 1);
       setAnswer("Oops! Your answer is wrong.");
+      setWrongCount(wrongCount + 1);
     }
   };
   return (
