@@ -1,0 +1,39 @@
+site name other than quiz cracker
+
+favicon and title
+
+navbar a route thakbe at least 4ta home topics stat and blog
+
+home route a header thakbe topics er upore  1ta pic and kisu lekha site related (not lorem ipsum)
+
+home  topic er name pic btn and how many questions on the topic
+
+btn a click krle oi topic er quiz a jabe dynamic route hye 
+
+quiz options gula radio btn or div or ja mne chay tmnei korte pari 
+
+option a click krle right hoile blbbe right wrong hoile blbe wrong blbe toaster diAe
+
+option icon a click krle right answer dekhabe toast a 
+
+full site responsive
+
+404 route thakbe 
+
+blog route a 3ta question er answer dite hbe 
+
+purpose of react router
+
+how does context API work?
+
+right about useRef hook
+
+kon topic a  total kyta question ase eta siye chart baniye stat route dekhabo
+
+readme.md file a project name, live site link, min 3ta point a site overview dibo, 
+
+at least 10 meaningful commits
+
+router deply a 404 jno na dekhay seita krte hbe 
+
+optional right/
