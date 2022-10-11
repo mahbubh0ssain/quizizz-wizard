@@ -3,15 +3,24 @@ import "./Option.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Option = ({ option, rightWrongFunc, answer }) => {
-  const notify = (answer) => toast(answer);
+const Option = ({ option, rightWrongFunc, correctAnswer }) => {
+  let notify = () => toast();
+  const rightWrongToast = (option) => {
+    if (option === correctAnswer) {
+      notify = () => toast.success("YAY! right answer.");
+    } else {
+      notify = () => toast.error("Oops! wrong answer.");
+    }
+  };
+
   const [disable, setDisable] = useState(false);
   return (
     <div>
       <button
         onClick={() => {
           rightWrongFunc(option);
-          notify(answer);
+          rightWrongToast(option);
+          notify();
           setDisable(true);
         }}
         disabled={disable}

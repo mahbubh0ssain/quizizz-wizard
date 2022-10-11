@@ -4,8 +4,10 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-primary">
-      <div className="container-fluid">
-        <h1 className="text-bold">Quizizz Wizard</h1>
+      <div className="container">
+        <h3 className=" logo text-bold  text-white">
+          <Link to="/">Quizizz Wizard</Link>
+        </h3>
         <button
           className="navbar-toggler"
           type="button"

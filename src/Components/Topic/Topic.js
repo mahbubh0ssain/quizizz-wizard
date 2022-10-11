@@ -3,7 +3,6 @@ import Option from "../Option/Option";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
 
 const Topic = ({
   questions,
@@ -13,14 +12,12 @@ const Topic = ({
   setWrongCount,
 }) => {
   const { options, question, correctAnswer } = questions;
-  const notify = () => toast(correctAnswer);
-  const [answer, setAnswer] = useState();
+  const notify = () => toast.success(correctAnswer);
+
   const rightWrongFunc = (option) => {
     if (option === correctAnswer) {
-      setAnswer("YAY! Your answer is right.");
       setRightCount(rightCount + 1);
     } else {
-      setAnswer("Oops! Your answer is wrong.");
       setWrongCount(wrongCount + 1);
     }
   };
@@ -39,7 +36,7 @@ const Topic = ({
             <Option
               key={i}
               option={option}
-              answer={answer}
+              correctAnswer={correctAnswer}
               rightWrongFunc={rightWrongFunc}
             ></Option>
           ))}

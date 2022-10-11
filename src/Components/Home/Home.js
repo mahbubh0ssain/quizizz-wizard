@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import FrontPage from "../FrontPage/FrontPage";
-
+import "./Home.css";
 const Home = () => {
   const topics = useLoaderData();
 
@@ -12,10 +12,10 @@ const Home = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/58/Quizziz_Logo.png"
             alt="logo"
-            className=" w-75 img-fluid"
+            className=" w-50 img-fluid"
           />
         </div>
-        <div className="w-50">
+        <div className="w-100 header-txt">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
             nemo maxime itaque sequi ipsum rem quasi nisi sit quidem.
