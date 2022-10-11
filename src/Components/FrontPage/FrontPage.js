@@ -1,17 +1,22 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+import "./FrontPage.css";
+
 const FrontPage = ({ topic }) => {
-  const { name, logo, total } = topic;
+  const { id, name, logo, total } = topic;
 
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" className="img-fluid p-3" src={logo} />
+      <Card>
+        <Card.Img className="img-fluid p-3" src={logo} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
-          <Card.Text>TOtal Quiz: {total}</Card.Text>
-          <Button variant="primary">Start Quiz</Button>
+          <Card.Text>Total Quiz: {total}</Card.Text>
+          <Button className="w-100" variant="primary">
+            <Link to={`topic/${id}`}>Start Quiz</Link>
+          </Button>
         </Card.Body>
       </Card>
     </div>
