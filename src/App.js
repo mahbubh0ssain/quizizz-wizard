@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./Components/Blog/Blog";
 import Home from "./Components/Home/Home";
+import NotFound from "./Components/NotFound/NotFound";
 import Statistics from "./Components/Statistics/Statistics";
 import Topics from "./Components/Topics/Topics";
 import Layout from "./Layout/Layout";
@@ -39,6 +40,7 @@ function App() {
         },
       ],
     },
+    { path: "*", element: <NotFound></NotFound> },
   ]);
   return (
     <div>
