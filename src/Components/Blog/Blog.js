@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="container">
+    <div className="container mb-3">
       <h2 className="text-center my-3">Know something new</h2>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">

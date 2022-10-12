@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <footer className="bg-light position-fixed bottom-0 w-100 py-3 ">
+    <footer className="bg-light position-static bottom-0 w-100 py-3 ">
       <div
         className=" container d-flex justify-content-between align-items-center
       "
@@ -13,17 +14,21 @@ const Footer = () => {
             className="rounded-circle img-fluid "
             alt=""
           />{" "}
-          <p>@mahbubh0ssain</p>
+          <small>@mahbubh0ssain</small>
         </div>
         <div className="social">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-            alt=""
-          />{" "}
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-            alt=""
-          />
+          <a href="https://github.com/mahbubh0ssain" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt="github"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/mahbubh0ssain/" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="linkedin"
+            />
+          </a>
         </div>
       </div>
     </footer>
