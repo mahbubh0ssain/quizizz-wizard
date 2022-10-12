@@ -7,7 +7,6 @@ const Option = ({ option, rightWrongFunc, correctAnswer }) => {
   let notify = () => toast();
   const [cssClass, setCssClass] = useState("");
   const [disable, setDisable] = useState(false);
-
   const rightWrongToast = (option) => {
     if (option === correctAnswer) {
       notify = () => toast.success("YAY!  right answer ✅");
@@ -21,7 +20,7 @@ const Option = ({ option, rightWrongFunc, correctAnswer }) => {
   return (
     <div>
       <button
-        disabled={disable}
+        disable={disable}
         onClick={() => {
           rightWrongFunc(option);
           rightWrongToast(option);
@@ -29,10 +28,10 @@ const Option = ({ option, rightWrongFunc, correctAnswer }) => {
           notify();
         }}
         className={`opt w-100 text-start border rounded-3 m-1 p-2 ${cssClass}
-        `}
+       `}
       >
-        <ToastContainer />
         {option}
+        <ToastContainer />
       </button>
     </div>
   );

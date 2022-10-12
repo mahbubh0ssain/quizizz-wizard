@@ -4,6 +4,7 @@ import { EyeIcon } from "@heroicons/react/24/solid";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const Topic = ({
   questions,
   count,
@@ -34,7 +35,9 @@ const Topic = ({
             <ToastContainer />
           </button>
         </div>
-        <div className="card-body text-primary row row-cols-lg-2 row-cols-md-1  m-0">
+        <div
+          className="card-body text-primary row row-cols-lg-2 row-cols-md-  m-0"
+        >
           {options.map((option, i) => (
             <Option
               key={i}

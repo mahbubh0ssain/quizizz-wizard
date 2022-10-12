@@ -9,8 +9,8 @@ const FrontPage = ({ topic }) => {
 
   return (
     <div>
-      <Card className="my-md-3 my-sm-3 my-2">
-        <Card.Img className="img-fluid p-3" src={logo} />
+      <Card className="my-md-3 my-sm-3 my-3 bg-light shadow">
+        <Card.Img className="img-fluid  p-3" src={logo} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
