@@ -1,15 +1,22 @@
-# Getting Started with Create React App
+# This is an educational website named Quizizz Wizard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site Link: [https://quizizz-wizard.netlify.app](https://quizizz-wizard.netlify.app)
 
-## Available Scripts
+## What I use:
 
-In the project directory, you can run:
+1. React JS
+2. Ract Router
+3. React Toaster
+4. Rechart JS
+5. Bootstrap
+6. Vanilla CSS
 
-### `npm start`
+## Key features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Its a modern quiz website
+2. It usage latest technologies like React Router v16.3, Bootstrap v5.2 etc.
+3. it is easy to use.
+4. White space manged very concisely
+5. It is a fully responsive website.
+6. In the blog section of this site I answered some tricky queries of JS. Don't forget to look up those.
+   Thank you.
