@@ -1,30 +1,35 @@
-import React, { useState } from "react";
 import "./Option.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 
 const Option = ({ option, rightWrongFunc, correctAnswer }) => {
   let notify = () => toast();
+  const [cssClass, setCssClass] = useState("");
+  const [disable, setDisable] = useState(false);
+
   const rightWrongToast = (option) => {
     if (option === correctAnswer) {
-      notify = () => toast.success("YAY! right answer.");
+      notify = () => toast.success("YAY!  right answer ✅");
+      return setCssClass(`bg-success text-white pe-none`);
     } else {
-      notify = () => toast.error("Oops! wrong answer.");
+      notify = () => toast.error("Oops!  wrong answer ❌");
+      return setCssClass(`bg-danger text-white pe-none`);
     }
   };
 
-  const [disable, setDisable] = useState(false);
   return (
     <div>
       <button
+        disabled={disable}
         onClick={() => {
           rightWrongFunc(option);
           rightWrongToast(option);
-          notify();
           setDisable(true);
+          notify();
         }}
-        disabled={disable}
-        className="opt text-start border rounded-3 m-1 p-2"
+        className={`opt w-100 text-start border rounded-3 m-1 p-2 ${cssClass}
+        `}
       >
         <ToastContainer />
         {option}

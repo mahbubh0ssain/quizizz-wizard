@@ -14,6 +14,7 @@ const Topic = ({
   const { options, question, correctAnswer } = questions;
   const notify = () => toast.success(correctAnswer);
 
+  // console.log(disable);
   const rightWrongFunc = (option) => {
     if (option === correctAnswer) {
       setRightCount(rightCount + 1);
@@ -21,6 +22,7 @@ const Topic = ({
       setWrongCount(wrongCount + 1);
     }
   };
+
   return (
     <div>
       <div className="card border-primary shadow mb-3">

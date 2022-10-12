@@ -1,0 +1,13 @@
+body {
+  min-height: 100vh;
+}
+footer img {
+  width: 35px;
+  height: 35px;
+}
+footer p {
+  margin: 0px;
+}
+footer {
+  min-height: 50px;
+}
