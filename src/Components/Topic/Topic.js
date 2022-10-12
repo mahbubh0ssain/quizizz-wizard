@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Topic = ({
   questions,
+  count,
   rightCount,
   setRightCount,
   wrongCount,
@@ -13,8 +14,6 @@ const Topic = ({
 }) => {
   const { options, question, correctAnswer } = questions;
   const notify = () => toast.success(correctAnswer);
-
-  // console.log(disable);
   const rightWrongFunc = (option) => {
     if (option === correctAnswer) {
       setRightCount(rightCount + 1);
@@ -27,7 +26,9 @@ const Topic = ({
     <div>
       <div className="card border-primary shadow mb-3">
         <div className="d-flex justify-content-between align-items-center bg-primary p-3">
-          <h5 className="text-white">{question}</h5>
+          <h5 className="text-white">
+            Quiz-{count + 1}. {question}
+          </h5>
           <button className="btn">
             <EyeIcon onClick={notify} className="icon text-white"></EyeIcon>
             <ToastContainer />

@@ -37,9 +37,10 @@ const Topics = () => {
           </div>
         </div>
       </div>
-      {topic.data["questions"].map((questions) => (
+      {topic.data["questions"].map((questions, i) => (
         <Topic
           key={questions.id}
+          count={i}
           questions={questions}
           wrongCount={wrongCount}
           rightCount={rightCount}

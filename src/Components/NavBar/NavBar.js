@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 const NavBar = () => {
   return (
@@ -20,18 +20,23 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarNav">
-          <ul className="navbar-nav links ms-auto">
+          <ul className="navbar-nav NavLinks ms-auto">
             <li className="nav-item">
-              <Link to="/">Home</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : undefined)}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="topic">Topics</Link>
+              <NavLink to="topic">Topics</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="statistics">Statistics</Link>
+              <NavLink to="statistics">Statistics</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="blog">Blog</Link>
+              <NavLink to="blog">Blog</NavLink>
             </li>
           </ul>
         </div>
